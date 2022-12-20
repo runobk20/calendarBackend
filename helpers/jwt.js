@@ -16,6 +16,8 @@ const generateJWT = (uid, name) => {
 
             resolve(token);
         })
+    }).catch((err) => {
+        console.log(err);
     })
 }
 
