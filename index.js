@@ -16,7 +16,7 @@ app.use(cors());
 
 //Directorio publico
 //app.use(express.static('public'))
-app.use(express.static(path.join(__dirname, 'public')));
+//app.use(express.static(path.join(__dirname, 'public')));
 
 //Lectura y parseo del body
 app.use(express.json());
