@@ -26,6 +26,11 @@ app.use('/api/auth', require('./routes/auth'));
 // crud : Eventos
 app.use('/api/events', require('./routes/events'));
 
+// Evitar que no se encuentren las rutas de react router dom
+app.get('*', (req, res) => {
+    res.sendFile(__dirname + '/public/index.html');
+})
+
 
 // Escuchar peticiones
 
